@@ -1,0 +1,9 @@
+eu\asangarin\ariutils\AriRandom.class
+eu\asangarin\ariutils\weight\WeightedObject.class
+eu\asangarin\ariutils\exceptions\InvalidWeightException.class
+eu\asangarin\ariutils\AriMath.class
+eu\asangarin\ariutils\AriStrings.class
+eu\asangarin\ariutils\exceptions\EmptyWeightListException.class
+eu\asangarin\ariutils\weight\WeightedContainer.class
+eu\asangarin\ariutils\AriUtils.class
+eu\asangarin\ariutils\AriEnums.class

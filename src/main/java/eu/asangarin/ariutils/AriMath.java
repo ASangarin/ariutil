@@ -1,5 +1,8 @@
 package eu.asangarin.ariutils;
 
+/**
+ * Quick and convenient Math utilities
+ */
 public final class AriMath {
 	/**
 	 * Returns a value inbetween 0.0 and 1.0, depending

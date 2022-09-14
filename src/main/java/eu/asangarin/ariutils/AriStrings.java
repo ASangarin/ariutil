@@ -1,5 +1,10 @@
 package eu.asangarin.ariutils;
 
+import java.util.Arrays;
+
+/**
+ *
+ */
 public final class AriStrings {
 	/**
 	 * Capitalizes the first letter
@@ -30,5 +35,13 @@ public final class AriStrings {
 	 */
 	public static String wrap(char character, String str) {
 		return character + str + character;
+	}
+
+	public static boolean equalsAny(String compare, String... strings) {
+		return Arrays.asList(strings).contains(compare);
+	}
+
+	public static boolean equalsAnyIgnoreCase(String compare, String... strings) {
+		return Arrays.stream(strings).anyMatch(str -> str.equalsIgnoreCase(compare));
 	}
 }

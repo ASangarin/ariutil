@@ -4,6 +4,9 @@ import java.util.Arrays;
 import java.util.Optional;
 import java.util.function.Predicate;
 
+/**
+ * Lots of convenience methods for handling enums.
+ */
 public final class AriEnums {
 	/**
 	 * Returns a random value from the provided enum class

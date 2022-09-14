@@ -10,10 +10,32 @@
     <packaging>pom</packaging>
     <name>AriUtil MCDev</name>
     <modules>
-        <module>ariutil-fabric</module>
         <module>ariutil-spigot</module>
         <module>ariutil-minecraft</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.fortasoft</groupId>
+                <artifactId>gradle-maven-plugin</artifactId>
+                <version>1.0.8</version>
+                <configuration>
+                    <tasks>
+                        <task>build</task>
+                    </tasks>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>invoke</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>

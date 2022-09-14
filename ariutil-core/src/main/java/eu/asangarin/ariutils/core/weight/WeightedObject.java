@@ -1,4 +1,4 @@
-package eu.asangarin.ariutils.weight;
+package eu.asangarin.ariutils.core.weight;
 
 import lombok.Getter;
 

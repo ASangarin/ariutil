@@ -1,4 +1,4 @@
-package eu.asangarin.ariutils.exceptions;
+package eu.asangarin.ariutils.core.exceptions;
 
 import java.io.Serial;
 

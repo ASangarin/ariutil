@@ -1,4 +1,4 @@
-package eu.asangarin.ariutils;
+package eu.asangarin.ariutils.core;
 
 /**
  * Quick and convenient Math utilities

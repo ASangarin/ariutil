@@ -1,7 +1,7 @@
-package eu.asangarin.ariutils.weight;
+package eu.asangarin.ariutils.core.weight;
 
-import eu.asangarin.ariutils.exceptions.EmptyWeightListException;
-import eu.asangarin.ariutils.exceptions.InvalidWeightException;
+import eu.asangarin.ariutils.core.exceptions.EmptyWeightListException;
+import eu.asangarin.ariutils.core.exceptions.InvalidWeightException;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -6,7 +6,9 @@
 
     <groupId>eu.asangarin</groupId>
     <artifactId>ariutil</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
+    <name>AriUtil</name>
 
     <licenses>
         <license>
@@ -15,9 +17,52 @@
         </license>
     </licenses>
 
-    <scm>
-        <url>https://svn.apache.org/viewvc/maven</url>
-    </scm>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>1.18</source>
+                    <target>1.18</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.4.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>ariutil-core</module>
+        <module>ariutil-mcdev</module>
+    </modules>
 
     <dependencies>
         <dependency>

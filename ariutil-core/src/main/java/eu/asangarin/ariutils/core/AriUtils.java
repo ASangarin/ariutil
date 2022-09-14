@@ -1,4 +1,4 @@
-package eu.asangarin.ariutils;
+package eu.asangarin.ariutils.core;
 
 import java.util.List;
 import java.util.function.Consumer;

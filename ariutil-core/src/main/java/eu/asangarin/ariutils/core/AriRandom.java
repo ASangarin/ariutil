@@ -12,8 +12,16 @@ import java.util.Random;
  * "I have no idea what I'm doing, this class is a representation of that."
  */
 public final class AriRandom {
+	private AriRandom() {
+	}
+
 	private static final Random RANDOM = new Random();
 
+	/**
+	 * Get a static instance of a Random object
+	 *
+	 * @return A random object
+	 */
 	public static Random get() {
 		return RANDOM;
 	}

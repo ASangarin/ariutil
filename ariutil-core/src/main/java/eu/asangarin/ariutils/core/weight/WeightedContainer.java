@@ -18,8 +18,24 @@ import java.util.Random;
  * @param <T> The object type of each weighted entry.
  */
 public class WeightedContainer<T> implements Iterable<WeightedObject<T>> {
-	private final Random rnd = new Random();
+	private final Random rnd;
 	private final List<WeightedObject<T>> options = new ArrayList<>();
+
+	/**
+	 * Constructs a new WeightedContainer and a new Random object for it to use.
+	 */
+	public WeightedContainer() {
+		this(new Random());
+	}
+
+	/**
+	 * Construct a new WeightedContainer and providing a Random object for it to use.
+	 *
+	 * @param random The Random object to use.
+	 */
+	public WeightedContainer(Random random) {
+		this.rnd = random;
+	}
 
 	/**
 	 * Selected a random object based on a weighted sum.
@@ -48,6 +64,7 @@ public class WeightedContainer<T> implements Iterable<WeightedObject<T>> {
 	 * Keeps doing this until the capacity is out, then
 	 * it stops.
 	 *
+	 * @param capacity Alongside the weighted sum, if capacity reaches 0, it will select the object.
 	 * @return A list of selected objects
 	 * @throws EmptyWeightListException if this WeightedContainer is empty.
 	 */
@@ -81,6 +98,8 @@ public class WeightedContainer<T> implements Iterable<WeightedObject<T>> {
 	}
 
 	/**
+	 * Check if this container contains any elements
+	 *
 	 * @return Whether or not this WeightedContainer contains any elements
 	 */
 	public boolean isValid() {
